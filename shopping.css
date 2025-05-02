@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: #f6f6f6;
+    color: #222;
+  }
+  
+  nav {
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .logo span {
+    color: #f39c12;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-links li a:hover {
+    color: #f39c12;
+  }
+  .btn-cart {
+    background: #f39c12;
+    border: none;
+    padding: 10px 14px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background: url('https://source.unsplash.com/1600x800/?shopping,mall') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  .hero-btn {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .hero-btn:hover {
+    background: #fff;
+    color: #111;
+  }
+  
+  .section {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  .section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  .section.dark {
+    background: #222;
+    color: #fff;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .product-card h3 {
+    margin: 15px 0 5px;
+  }
+  .product-card button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    background: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .product-card button:hover {
+    background: #111;
+  }
+  
+  .newsletter-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+  }
+  .newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .newsletter-form button {
+    padding: 12px 18px;
+    background: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  /* Scroll Reveal Animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
