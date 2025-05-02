@@ -1,0 +1,182 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* NAVBAR */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+  }
+  .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    color: #ff3131;
+  }
+  .logo span {
+    color: #f8ff00;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  nav a {
+    color: white;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #ff3131;
+  }
+  
+  /* HERO */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1550345332-09e3acb46a46') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: center;
+  }
+  .hero-content h2 {
+    font-size: 3.5em;
+    color: #f8ff00;
+    min-height: 60px;
+  }
+  .hero-content p {
+    font-size: 1.3em;
+    margin: 15px 0;
+  }
+  .btn {
+    background: #ff3131;
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .btn:hover {
+    background: #f8ff00;
+    color: #000;
+  }
+  
+  /* SECTION */
+  .section {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  .section.dark {
+    background: #111;
+  }
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #f8ff00;
+  }
+  
+  /* FEATURES */
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .feature {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    font-size: 1.2em;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  /* CARDS */
+  .cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    background: rgba(255,255,255,0.03);
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* FORM */
+  .join-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 15px;
+  }
+  .join-form input {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+  }
+  .join-form button {
+    background: #f8ff00;
+    color: #000;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 25px;
+    text-align: center;
+    background: #111;
+    font-size: 14px;
+  }
+  
+  /* ANIMATION */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .features, .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
